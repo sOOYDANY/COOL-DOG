@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cool Dog - Pecheras personalizables</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-900 font-sans">
+
+  <!-- NAV -->
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-br from-red-400 to-yellow-400 flex items-center justify-center shadow-lg">
+        <span class="font-extrabold text-white">CD</span>
+      </div>
+      <div>
+        <h1 class="font-bold text-xl">Cool Dog</h1>
+        <p class="text-xs text-gray-600 -mt-1">Estilo, seguridad y diversión</p>
+      </div>
+    </div>
+    <div class="hidden md:flex gap-6 items-center">
+      <a href="#productos" class="hover:underline">Productos</a>
+      <a href="#galeria" class="hover:underline">Galería</a>
+      <a href="#personaliza" class="hover:underline">Personaliza</a>
+      <a href="#contacto" class="px-4 py-2 bg-red-400 text-white rounded-full shadow">Comprar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center gap-8">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Pecheras ergonómicas y personalizables
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400"> para tu mejor amigo</span>
+      </h2>
+      <p class="mt-4 text-gray-700">Diseños divertidos, materiales sostenibles y una personalización fácil para que tu perro destaque.</p>
+      <div class="mt-6 flex gap-4">
+        <a href="#productos" class="px-5 py-3 bg-red-500 text-white rounded-lg shadow">Ver Productos</a>
+        <a href="#personaliza" class="px-5 py-3 border border-gray-300 rounded-lg">Personaliza</a>
+      </div>
+    </div>
+
+    <div class="md:w-1/2 flex justify-center">
+      <div class="w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-white via-pink-50 to-white" data-sr>
+        <img src="./assets/imagen1.png" alt="Cool dog hero" class="w-full object-cover">
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-3xl font-bold">Nuestros productos</h3>
+    <p class="text-gray-600 mt-2">Pecheras modulares, transpirables y con parches divertidos.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card template repeated 3 veces, puedes duplicar si quieres -->
+      <article class="bg-white rounded-xl p-4 shadow transform hover:-translate-y-2 transition-all" data-sr>
+        <img src="./assets/imagen2.png" alt="Producto 1" class="w-full h-52 object-contain" />
+        <div class="mt-4 flex items-center justify-between">
+          <div>
+            <h4 class="font-semibold">Colección Super</h4>
+            <div class="text-sm text-gray-500">Ergonómica y personalizable</div>
+          </div>
+          <div class="text-lg font-bold">$1,800</div>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="#personaliza" class="flex-1 px-4 py-2 bg-red-400 text-white rounded-lg text-center">Personalizar</a>
+          <button class="px-4 py-2 border rounded-lg">Agregar</button>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl p-4 shadow transform hover:-translate-y-2 transition-all" data-sr>
+        <img src="./assets/imagen3.png" alt="Producto 2" class="w-full h-52 object-contain" />
+        <div class="mt-4 flex items-center justify-between">
+          <div>
+            <h4 class="font-semibold">Wearable Tech</h4>
+            <div class="text-sm text-gray-500">Integración ligera de accesorios</div>
+          </div>
+          <div class="text-lg font-bold">$2,400</div>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="#personaliza" class="flex-1 px-4 py-2 bg-red-400 text-white rounded-lg text-center">Personalizar</a>
+          <button class="px-4 py-2 border rounded-lg">Agregar</button>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-xl p-4 shadow transform hover:-translate-y-2 transition-all" data-sr>
+        <img src="./assets/imagen4.png" alt="Producto 3" class="w-full h-52 object-contain" />
+        <div class="mt-4 flex items-center justify-between">
+          <div>
+            <h4 class="font-semibold">Edición Urbana</h4>
+            <div class="text-sm text-gray-500">Diseños pensados para la ciudad</div>
+          </div>
+          <div class="text-lg font-bold">$1,950</div>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="#personaliza" class="flex-1 px-4 py-2 bg-red-400 text-white rounded-lg text-center">Personalizar</a>
+          <button class="px-4 py-2 border rounded-lg">Agregar</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERÍA (usa las 9 imágenes) -->
+  <section id="galeria" class="max-w-6xl mx-auto px-6 py-12 bg-gradient-to-r from-yellow-50 to-pink-50">
+    <h3 class="text-3xl font-bold">Galería</h3>
+    <p class="text-gray-600 mt-2">Mira nuestros estilos y combinaciones.</p>
+
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4" data-sr>
+      <img src="./assets/IMAGEN 1.png" alt="Galeria 1" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 2.png" alt="Galeria 2" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 3.png" alt="Galeria 3" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 4.png" alt="Galeria 4" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 5.png" alt="Galeria 5" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 6.png" alt="Galeria 6" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 7.png" alt="Galeria 7" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 8.png" alt="Galeria 8" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 9.png" alt="Galeria 9" class="rounded-lg shadow h-48 w-full object-cover">
+      <img src="./assets/IMAGEN 10.png" alt="Galeria 10" class="rounded-lg shadow h-48 w-full object-cover">
+    </div>
+  </section>
+
+  <!-- PERSONALIZA -->
+  <section id="personaliza" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div data-sr>
+        <h3 class="text-3xl font-bold">Personaliza tu pechera</h3>
+        <p class="text-gray-600 mt-2">Elige color, talla y parches para crear un diseño único.</p>
+
+        <div class="mt-6">
+          <label class="block text-sm font-medium">Color</label>
+          <div class="mt-2 flex gap-2">
+            <button class="px-3 py-2 rounded-full border">Rojo</button>
+            <button class="px-3 py-2 rounded-full border">Azul</button>
+            <button class="px-3 py-2 rounded-full border">Verde</button>
+            <button class="px-3 py-2 rounded-full border">Naranja</button>
+          </div>
+
+          <label class="block text-sm font-medium mt-4">Tamaño</label>
+          <div class="mt-2 flex gap-2">
+            <button class="px-3 py-2 rounded border">S</button>
+            <button class="px-3 py-2 rounded border">M</button>
+            <button class="px-3 py-2 rounded border">L</button>
+            <button class="px-3 py-2 rounded border">XL</button>
+          </div>
+
+          <div class="mt-6 flex gap-3">
+            <button class="px-5 py-3 bg-red-500 text-white rounded-lg">Agregar al carrito</button>
+            <button class="px-5 py-3 border rounded-lg">Vista previa</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center" data-sr>
+        <div class="w-80 h-80 bg-white rounded-2xl shadow flex items-center justify-center">
+          <img src="./assets/imagen5.png" alt="preview" class="w-64 h-64 object-contain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div data-sr>
+        <h3 class="text-3xl font-bold">Sobre Cool-Dog</h3>
+        <p class="text-gray-700 mt-3">Nacimos para ofrecer pecheras que combinan estilo y tecnología, cuidando la comodidad del animal y el planeta.</p>
+        <ul class="mt-4 space-y-2 text-gray-600">
+          <li>• Materiales transpirables y duraderos</li>
+          <li>• Personalización fácil</li>
+          <li>• Envíos a todo México</li>
+        </ul>
+      </div>
+      <div class="flex justify-center" data-sr>
+        <img src="./assets/imagen6.png" alt="about" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto" class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6" data-sr>
+      <div>
+        <h4 class="font-bold">Cool Dog</h4>
+        <p class="text-sm text-gray-600 mt-2">Síguenos en redes y comparte tus fotos con #CoolDogStyle</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Contacto</h5>
+        <p class="text-sm text-gray-600 mt-2">Newproduct@cool-dog.mx</p>
+        <p class="text-sm text-gray-600">+52 8140058958</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Newsletter</h5>
+        <div class="mt-2 flex gap-2">
+          <input placeholder="Tu email" class="px-3 py-2 border rounded-l-md" />
+          <button class="px-4 py-2 bg-red-400 text-white rounded-r-md">Suscribir</button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-8 text-xs text-gray-500">© 2025 Cool Dog. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5215512345678" target="_blank" rel="noreferrer" class="fixed right-4 bottom-6 bg-green-500 p-3 rounded-full shadow-lg text-white flex items-center gap-2" title="Escríbenos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 9 9 0 0121 12.79z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12v.01"/></svg>
+    <span class="hidden md:block text-sm">WhatsApp</span>
+  </a>
+
+  <script>
+    // Simple ScrollReveal init
+    ScrollReveal().reveal('[data-sr]', {
+      distance: '50px',
+      duration: 700,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 100
+    });
+  </script>
+</body>
+</html>
